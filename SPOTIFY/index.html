@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - your favourite music is here</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"> <img src="photos/spotify-logo.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container" style=" margin-left: 15%; "> 
+            <div class="songlist">
+                 <h1>  Best of NCS-No Copyright Sounds</h1>
+                  <div id="songitemcontainer" class="songitem">
+                    <img src="photos/cover.png" >
+                    
+                     <span class="songlistplay">  <h2 id="songname" class="name" >It is Unknown Song</h2><h2 class="songtime" >04:01 </h2> <i style="color: black ; font-size: x-large;" id="0" class=" playicon fa-solid fa-circle-play"></i></span>
+                 </div>
+                 <div class="songitem">
+                    <img src="photos/Apna Bna Le.png" >
+                    
+                     <span class="songlistplay">  <h2 id="songname" class="name" > Apnaa Bna Le Piyaa</h2><h2 class="songtime" >03:24 </h2> <i style="color: black ; font-size: x-large;" id="1" class=" playicon fa-solid fa-circle-play"></i></span>
+                 </div>
+                 <div class="songitem">
+                    <img src="photos/cover.png" >
+                    
+                     <span class="songlistplay">  <h2 id="songname" class="name" >Main rahu Ya Na rhu</h2><h2 class="songtime" >06:46 </h2> <i style="color: black ; font-size: x-large;" id="2" class=" playicon fa-solid fa-circle-play"></i></span>
+                 </div>
+                 <div class="songitem">
+                    <img src="photos/Moh Moh Ke Dhaage.jpg" >
+                    
+                     <span class="songlistplay">  <h2 id="songname" class="name" >Moh Moh ke Dhaage</h2><h2 class="songtime" >05:22 </h2> <i style="color: black ; font-size: x-large;" id="3" class=" playicon fa-solid fa-circle-play"></i></span>
+                 </div>
+                 <div class="songitem">
+                    <img src="photos/Chahun Main Ya Naa.jpg" >
+                    
+                     <span class="songlistplay">  <h2 id="songname" class="name" >Chaahu Ma Ya Naaa</h2><h2 class="songtime" >04:00 </h2> <i style="color: black ; font-size: x-large;" id="4" class=" playicon fa-solid fa-circle-play"></i></span>
+                 </div>
+                 
+                 
+            </div>
+            <div class="songbanner"></div>
+        
+    </div>
+
+    <div class="bottom">
+
+        <input type="range" name="range" id="myprogressbar" min="0" value="0" max="100">
+        <div class="gif" ><img src="photos/GIf.gif" alt="1" id="gif"><span id ="mastersongname"> It is Unknown Song.. </span></div>
+        <span id="songtime" >00:00 / 00:00</span>
+        <div class="icon">
+            <i class="fa-solid fa-backward" id="previous"></i>
+             <i class="fa-solid fa-circle-play" id="masterplay"></i>
+             <i class="fa-solid fa-forward" id="next" ></i>
+        </div>
+    </div>
+
+    <script src="script.js" ></script>
+</body>
+</html>
+ 

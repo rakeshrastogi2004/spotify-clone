@@ -1,0 +1,154 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: antiquewhite;
+}
+ 
+nav{
+    font-family: 'ubuntu',sans-serif;
+}
+nav ul li{
+    padding: 10px;
+}
+nav ul{
+
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 70px;
+    background-color:black ;
+    color: white;
+}
+.brand img{
+    width: 50px;
+    padding: 5px;
+}
+.brand{ display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.container{
+    min-height: 80vh;
+    background-color: black;
+    color: white;
+    /* display: flex;
+    justify-content: center; */
+    width:70% ;
+    margin: 35px;
+    padding: 35px;
+    border-radius: 10px;
+    background-image: url("./photos/background.jpg") ;
+    background-size: contain;
+    
+    
+}
+.songitem{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-top: 20px;
+    height: 50px;
+   width: 30%   ;
+    border-radius: 25px;
+
+}
+.songitem img{
+    height: 90%;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+.songlistplay{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: black;
+    padding: 25px;
+    font-size: small;
+    display: flex;
+    
+}
+ 
+
+.name{
+   flex: 1;
+   white-space:nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+.songtime{
+width: 80px;
+ 
+text-align: center;
+margin: 0 25px;
+}
+#playicon{
+   margin-left: auto;
+   cursor: pointer;
+   position: sticky;
+}
+
+
+.container h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+}
+#songitemcontainer{
+    margin-top: 100px;
+}
+
+ 
+#equal{
+    width: 50%;
+}
+.gif img{
+   width: 80px;
+   height: auto;
+   position:absolute;
+   left: 33vh;
+   top: 40%;
+   opacity:0;
+   transition:opacity 0.5s ease-in;
+}
+ #mastersongname{
+    position: absolute;
+    left: 40vh;
+    top: 50%;
+     
+}
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     position: relative;
+    height: 120px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    flex-direction: column;
+}
+ 
+.icon{
+    font-size: 40px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+.icon i{
+    margin: 0 8px;
+}
+
+#myprogressbar{
+    width: 140vh;
+    cursor: pointer;
+}
+ 
