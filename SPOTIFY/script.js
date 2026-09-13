@@ -79,21 +79,7 @@ const formatTime = (time) => {
     }
 
 });
-// masterplay.addEventListener('click',()=>{
-// if(audioElement.paused || audioElement.currentTime<=0){
-//     audioElement.play();  
-//      masterplay.classList.remove('fa-circle-play');
-//     masterplay.classList.add('fa-circle-pause');
-//     gif.style.opacity = 1;    
-// }
-
-// else{
-//      audioElement.pause();
-//       masterplay.classList.remove('fa-circle-pause');
-//     masterplay.classList.add('fa-circle-play');  
-//      gif.style.opacity = 0;
-// }
-// });
+ 
 
 ///////////...........
 
@@ -115,15 +101,7 @@ myprogressbar.addEventListener('change',()=>{
         audioElement.currentTime = (myprogressbar.value * audioElement.duration)/100;
 });
 
-//sabhi icons ko reset krne ka functon..
-// const makeallplays = ()=>{
-//     Array.from(document.getElementsByClassName('playicon')).forEach((element)=>{
-//         element.classList.remove('fa-circle-pause');
-//         element.classList.add('fa-circle-play');
-//     });
-// };
-
-//////////////
+ 
 const makeallplays = () => {
 
     Array.from(
@@ -135,35 +113,7 @@ const makeallplays = () => {
 
     });
 };
-/////////////
-
-// gaane ko click krne pr play pause logic
-// Array.from(document.getElementsByClassName('playicon')).forEach((element) => {
-//    element.addEventListener('click',(e)=>{
-//     makeallplays();
-//     songindex = parseInt(e.target.id);
-
-//     //icon change
-//     e.target.classList.remove('fa-circle-play');
-//     e.target.classList.add('fa-circle-pause');
-
-//     //sahi song path check krna..
-//     audioElement.src = songs[songindex].filepath;
-
-//     //Bottom baar pr gaane ka naam badalna ...
-//     document.getElementById('mastersongname').innerText = songs[songindex].songname;
-    
-//     //Audio play
-//     audioElement.currentTime = 0;
-//     audioElement.play();
-//     gif.style.opacity = 1;
-
-//     //Master play icon ko pause icon me badlna..
-//     masterplay.classList.remove('fa-circle-play');
-//     masterplay.classList.add('fa-circle-pause');
-    
-//    });
-// });
+ 
 
  Array.from(document.getElementsByClassName('playicon')).forEach((element) => {
 
@@ -223,25 +173,7 @@ const makeallplays = () => {
     });
 
 });
-/////////////////////////////
-
-
-// document.getElementById('next').addEventListener('click',()=>{
-//     if(songindex>=9){
-//        songindex = 0 
-//     }
-//     else{
-//         songindex += 1;
-//     }
-//      audioElement.src = songs[songindex].filepath;
-//      document.getElementById('mastersongname').innerText = songs[songindex].songname;
-//       audioElement.currentTime = 0;
-//     audioElement.play();
-//     songtime.innerText = "00:00 / 00:00";
-//      masterplay.classList.remove('fa-circle-play');
-//     masterplay.classList.add('fa-circle-pause');
-    
-// })
+ 
 document.getElementById('next').addEventListener('click', () => {
 
     // Next song
@@ -287,20 +219,7 @@ document.getElementById('next').addEventListener('click', () => {
 
 });
 
-// document.getElementById('previous').addEventListener('click',()=>{
-//     if(songindex<=0){
-//        songindex = 0 
-//     }
-//     else{
-//         songindex -= 1
-//     }
-//      audioElement.src = songs[songindex].filepath;
-//      document.getElementById('mastersongname').innerText = songs[songindex].songname;
-//       audioElement.currentTime = 0;
-//     audioElement.play();
-//      masterplay.classList.remove('fa-circle-play');
-//     masterplay.classList.add('fa-circle-pause');
-// })
+ 
 document.getElementById('previous').addEventListener('click', () => {
 
     // Previous song
