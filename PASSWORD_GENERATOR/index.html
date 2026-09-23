@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSWORD GENRATOR | JAVA PROJECT</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+
+        <div class="inputBox">
+            <input type="text" class="passBox" disabled id="passBox">
+            <span class="material-symbols-outlined" id="copyicon">
+             content_copy
+            </span>
+        </div>
+
+        <input type="range"  min = "1" , max = "50" value="8" id="inputslider">
+
+         <div class="row">
+             <p> Password Leangth</p>
+             <span id="slidervalue"> </span>
+         </div>
+
+        <div class="row">
+             <label for="lowercase">Include Lower Letter (a-to-z) </label>
+             <input type="checkbox" name="lowercase" id="lowercase" checked>
+        </div>
+
+         <div class="row">
+             <label for="uppercase">Include Uppercase (A-TO-Z) </label>
+             <input type="checkbox" name="uppercase" id="uppercase" checked>
+        </div>
+
+         <div class="row">
+             <label for="numbers">Include Number (0-9)</label>
+             <input type="checkbox" name="numbers" id="numbers" checked>
+        </div>
+
+         <div class="row">
+             <label for="symbols">Include Symbols (@-to-*)  </label>
+            
+             <input type="checkbox" name="symbols" id="symbols" checked>
+        </div>
+
+        <button type="button" class="genbtn" id="genbtn" >
+                 Genrate Password
+        </button>
+        
+
+    </div>
+
+   
+
+
+
+    
+    <script src="script.js" ></script>
+</body>
+</html>
